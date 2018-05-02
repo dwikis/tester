@@ -7,5 +7,4 @@ env:
 
     script:
       - "curl -u $FTP_USERL:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/praktek-4c'"
-
-      - "curl -T halo.php -u $FTP_USER;$FTP_PASS ftp://files.000webhost.com"
+      - "curl -T halo.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com"
